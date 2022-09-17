@@ -9,7 +9,7 @@ class RadioTest {
 
     @Test
     public void shouldSetRadioStation() {
-        Radio radio = new Radio(0, 9);
+        Radio radio = new Radio(9);
 
         radio.setCurrentRadioStation(10);
         Assertions.assertEquals(0, radio.getCurrentRadioStation());
@@ -23,7 +23,7 @@ class RadioTest {
 
     @Test
     public void nextRadioStation() {
-        Radio radio = new Radio(0, 9);
+        Radio radio = new Radio(9);
 
         radio.setCurrentRadioStation(9);
         radio.setNextRadioStation();
@@ -36,7 +36,7 @@ class RadioTest {
 
     @Test
     public void prevRadioStation() {
-        Radio radio = new Radio(0, 9);
+        Radio radio = new Radio(9);
 
         radio.setCurrentRadioStation(9);
         radio.setPrevRadioStation();
